@@ -10,7 +10,7 @@
 
 //primero tenemos que agregar las actions y meter la logica
 
-import { saveData, saveDataLoading, saveDataError } from "./actions"
+import { saveData, saveDataLoading, saveDataRejected } from "./actions"
 
 export const saveProducts = () => async (dispatch) => {
     try {
@@ -21,7 +21,7 @@ export const saveProducts = () => async (dispatch) => {
         dispatch(saveData(productsResponse));
         dispatch(saveDataLoading(false));
     } catch (error){
-        dispatch(saveDataError());
+        dispatch(saveDataRejected());
     }
 }
 
