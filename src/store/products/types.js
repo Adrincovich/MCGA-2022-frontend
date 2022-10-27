@@ -1,3 +1,6 @@
-export const SAVE_DATA = 'SAVE_DATA';
+export const SAVE_DATA_FULLFILLED = 'SAVE_DATA_FULLFILLED';
+export const SAVE_DATA_LOADING = 'SAVE_DATA_LOADING';
+export const SAVE_DATA_REJECTED  = 'SAVE_DATA_REJECTED';
+
 export const GET_DATA = 'GET_DATA';
 export const DELETE_DATA = 'DELETE_DATA';
